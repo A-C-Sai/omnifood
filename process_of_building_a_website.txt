@@ -1,0 +1,38 @@
+1. Define
+	- who the website if for
+	- what the website is for (business / user goals)
+	- define a target audience
+
+2. Plan
+	- plan and gather website content
+	- plan of sitemap
+	- sections for each page
+	- define the website personality
+
+
+3. Sketch
+	- components and layout patterns
+	- basic sketches
+	- iterative process
+
+4. Design and Build
+	- design and build using HTML and CSS
+
+
+5. Test and Optmize
+	- make sure website works well in all major browser
+	- test on actual mobile devices
+	- optimize all images (dimensions and file size)
+	- test accessibility
+	- run the Lighthouse performance test in Chrome DevTools and try to fix reported issues
+	- SEO
+
+
+6. Launch
+	- share / host website
+	- domain name
+
+
+7. Maintain and Update
+	- keep content updated over time
+	- install analytics software e.g. google analytics or fathom to get stats about website users. This may inform future changes in the site structure and content
