@@ -1,0 +1,55 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHTS
+Default: 400
+
+- LINE HEIGHTS
+Default: 1
+
+
+--- 02 COLORS
+
+- Brand color: #e67e22
+
+- Tints:
+- Shades: 
+- Accents: 
+- Greys: #555
+
+
+--- 05 SHADOWS
+
+-- 06 BORDER-RADIUS
+
+-- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625, by using a percentage value instead of px value to set the root elements' font size, we ensure to respect user preferences i.e. they can still increase/ decrease the default font size on their browser. Percentage of the user's browser font-size setting. We are effectively setting 1rem = 10px for easier calculations. */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}

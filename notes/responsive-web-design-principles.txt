@@ -1,0 +1,26 @@
+- Design technique to make a webpage adjust its layout and visual style to any possbile screen size / device (window or viewport).
+
+1. Fluid Layouts
+- to allow webpages to adapt to the current viewport width (or even height)
+- use % (or vh/ vw) unit instead of px for elements that shud adapt to viewport (usually layout)
+- use max-width instead of width; 
+    - if the container width is larger that the specified max-width, then the width of the element is equal to the value specified for max-width. However, if the container width is less than the specified max-width then the widht of the element will be 100% of the container element width.
+
+2. Responsive Units
+- use rem unit instead of pc for most lengths
+ - rem is the root element's (html element) font size. If no  font-size has been set on the html element by default it is 16px, unless the user has changed it in the browser settings.
+
+- to make it ez to scale the entire layout down (or up) automatically
+- tip: setting 1rem = 10pc for ex calculations
+
+3. Flexible Images
+- by default, images don't scale automatically as we change the viewport, so we need to fix that.
+- Always use % for image dimensions, together with the max-width property.
+
+4. Media Queries
+- to change CSS styles on certain viewport widths (called breakpoints)
+
+
+- There are 2 approaches to Responsive Web Development
+     - Desktop-First
+     - Mobile-First
