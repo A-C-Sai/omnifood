@@ -1,13 +1,16 @@
 1. Define
-	- who the website if for
+	- who the website if for : client
 	- what the website is for (business / user goals)
-	- define a target audience
+		- Business goal: Selling monthly food subscription
+		- User goal: Eating well effortlessly, without spending a lot of time and money
+	- define a target audience : Busy ppl who like technology, are interested in a healthy diet, and have a well-paying job.
 
 2. Plan
-	- plan and gather website content
-	- plan of sitemap
+	- plan and gather website content : provided
+	- plan of sitemap : one-page marketing website aka landing page
+	- define the website personality :
+		- Based on the tech-centered target audience, as well as the actual product being sold, we will use the startup/upbeat personality. We might add some elements of the calm/peaceful personality, since the product is all about consumer well-being as well.
 	- sections for each page
-	- define the website personality
 
 
 3. Sketch
