@@ -27,13 +27,14 @@ Default: 1
 
 - Brand color: #e67e22
 
-- Tints: #fae5d3, #fdf2e9
-- Shades: #cf711f
+- Tints: #fae5d3, #fdf2e9,#f0b27a
+- Shades: #cf711f, #2e1907
 - Accents: 
-- Greys: #555, #333, #6f6f6f
+- Greys: #555, #333, #6f6f6f, #767676
 
 
 --- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
 
 -- 06 BORDER-RADIUS
 Default: 9px
@@ -55,6 +56,11 @@ Default: 9px
 6. overflow
 7. currentColor (property value)
 8. transparent (property value)
+9. :not()
+10. background-image; url(); linear-gradient()
+11. background-size
+12. background-position
+14. outline --> similar to border but more outside the element and not part of the box model
 */
 
 *,
@@ -119,6 +125,7 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -128,11 +135,26 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
+  /*  Only necessary for .btn*/
+  border: none;
+  cursor: pointer;
+
   /*Put transition on original state*/
   transition: all 0.3s;
 }
 .btn:hover,
 .btn:active {
+}
+
+.btn--form {
+  background-color: #2e1907;
+  color: #fae5d3;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  color: #2e1907;
+  background-color: #fae5d3;
 }
 
 .margin-right-sm {
@@ -174,9 +196,16 @@ body {
 .grid--4-col {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
 
 .grid--center-v {
   align-items: center;
+}
+
+.grid.grid--row-gap-sm {
+  row-gap: 4.8rem;
 }
 
 strong {
@@ -218,4 +247,14 @@ img {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+main *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.551);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.551);
 }
