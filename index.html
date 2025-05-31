@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered, 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
+    />
+
+    <!-- DIFFERENT FOR Browser, Android and Iphones -->
+    <link rel="icon" href="./img/favicon copy.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +21,7 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <!-- 
@@ -28,11 +35,13 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
     </header>
@@ -130,7 +139,7 @@
             HOW IT WORKS
       #########################
       -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="sub-heading">How it works</span>
           <h2 class="heading-secondary">
@@ -203,7 +212,7 @@
       #########################
       -->
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="sub-heading">Meals</span>
           <h2 class="heading-secondary">
@@ -319,7 +328,7 @@
       #########################
       -->
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <span class="sub-heading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -464,7 +473,7 @@
       #########################
       -->
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -584,7 +593,7 @@
       #########################
       -->
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -595,13 +604,14 @@
                 first meal is on us!
               </p>
 
-              <form action="#" class="cta-form">
+              <form action="#" name="sign-up" class="cta-form">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -612,13 +622,14 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">--</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube video</option>
@@ -675,7 +686,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2025 by Omnifood, Inc.<br />All rights reserved.
+            Copyright &copy; <span class="currentYear">2023</span> by Omnifood,
+            Inc.<br />All rights reserved.
           </p>
         </div>
 
@@ -729,5 +741,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
+
+<!-- 
+- picture element 
+-->

@@ -11,14 +11,33 @@
  - rem is the root element's (html element) font size. If no  font-size has been set on the html element by default it is 16px, unless the user has changed it in the browser settings.
 
 - to make it ez to scale the entire layout down (or up) automatically
-- tip: setting 1rem = 10pc for ex calculations
+- tip: setting 1rem = 10p c for ex calculations
 
 3. Flexible Images
 - by default, images don't scale automatically as we change the viewport, so we need to fix that.
 - Always use % for image dimensions, together with the max-width property.
 
-4. Media Queries
+4. Media Queries (HAVE NOT IMPLEMENTED IN THIS PROJECT)
 - to change CSS styles on certain viewport widths (called breakpoints)
+- max-width for Desktop first approach e.g. @media (max-width: 600px) --> is width <= 600px?
+- min-width for mobile first approach
+- inside these media queries we simple overwrite some specific parts of the global css for ceatain viewport widths, but all the rest of the global code will still apply.
+- when we have multiple media queries there is a chance of viewport overlap and conflicting declarations, in which case the last declaration of the conflicting declarations will be applied.
+- strategies fo selecting breakpoints: 
+    - based on popular devices
+    - based on screen width ranges, breakpoints b/w similar device sizes
+    - e.g. mobile 300-500px, tablets 600-900px, landscape tablets 900-1100px, laptops/ Desktops >1200px
+    - even better would be to set breakpoints when design breaks down
+
+NOTE: /* rem and em do NOT depend on the html font-size in media-queries!
+Instead, 1 rem = 1em = 16px */ i.e @media (max-width: 84em){} 84em = 1344px (84*16) NOT (84*10) but inside the media query we can still keep our mental model of 1rem = 10px for easier calc.
+- we could write our media queries in a new file.
+- writing many media queries to fix every single problem isn't a good idea
+- a media query should atleast work (keep design intact) for a range of viewport widths
+- make the webiste work for majority of the users
+- responsive web design is an iterative process
+- it is possible to write same media query twice (both will apply)
+
 
 
 - There are 2 approaches to Responsive Web Development

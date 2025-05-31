@@ -23,7 +23,7 @@
 
 
 5. Test and Optmize
-	- make sure website works well in all major browser
+	- make sure website works well in all major browser (caniuse)
 	- test on actual mobile devices
 	- optimize all images (dimensions and file size)
 	- test accessibility

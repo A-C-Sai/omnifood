@@ -61,6 +61,25 @@ Default: 9px
 11. background-size
 12. background-position
 14. outline --> similar to border but more outside the element and not part of the box model
+
+15. we can choose element based on attributes .class[attribute=""] {}
+
+16. display: none ---> doesn't all for transition e.g. for mobile nav
+  - placing the navigation using absolute positioining anf making it occupy the entire viewport (height n width)
+  - use opacity: 0  ---> to hide it visually
+  - pointer-events: none ---> unaccessible to mouse and keyboard
+  - visibility: hidden ----> hide it from screen readers
+  - .nav--open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0)
+  }
+  - overflow-x/overflow-y on body and html for sliding in navigation only works if there is nothing absolutely positioned in relation to body. 
+  - toggle "nav--open" class using JS
+
+  17. calc()
+  18. scroll-behaviour
 */
 
 *,
@@ -74,6 +93,9 @@ Default: 9px
 html {
   /* 10px / 16px = 0.625, by using a percentage value instead of px value to set the root elements' font size, we ensure to respect user preferences i.e. they can still increase/ decrease the default font size on their browser. Percentage of the user's browser font-size setting. We are effectively setting 1rem = 10px for easier calculations. */
   font-size: 62.5%;
+
+  /* MIGHT NOT WORK ON ALL BROWSERS */
+  scroll-behavior: smooth;
 }
 
 body {
